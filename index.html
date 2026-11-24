@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FreshMart — farm-fresh groceries, everyday essentials and same-day delivery in one simple shop.">
+  <title>FreshMart — Everything Fresh, All in One Place</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="utility-bar">
+      <div class="container utility-inner">
+        <div class="utility-left">
+          <details class="dropdown language">
+            <summary aria-label="Select language">En <span class="caret" aria-hidden="true"></span></summary>
+            <div class="dropdown-menu">
+              <a href="#">English</a>
+              <a href="#">Español</a>
+              <a href="#">Français</a>
+              <a href="#">Deutsch</a>
+            </div>
+          </details>
+          <form class="search" role="search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4.2-4.2"/></svg>
+            <input type="search" placeholder="Search Grocery Items..." aria-label="Search grocery items">
+          </form>
+        </div>
+
+        <a class="brand brand-small" href="#home" aria-label="FreshMart home">
+          <span class="brand-fresh">Fresh</span><span class="brand-mart">mart</span>
+        </a>
+
+        <div class="utility-right">
+          <a class="utility-link" href="#wishlist">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 8.6c0 4.5-8.8 10-8.8 10s-8.8-5.5-8.8-10a4.6 4.6 0 0 1 8.8-1.8 4.6 4.6 0 0 1 8.8 1.8Z"/></svg>
+            <span>Wishlist</span>
+          </a>
+          <a class="utility-link" href="#cart">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="10" cy="20" r="1.3"/><circle cx="18" cy="20" r="1.3"/></svg>
+            <span>Cart <b class="count">2</b></span>
+          </a>
+          <details class="dropdown account">
+            <summary aria-label="Account menu">
+              <span class="avatar">AM</span><span class="caret" aria-hidden="true"></span>
+            </summary>
+            <div class="dropdown-menu align-right">
+              <a href="#">My account</a>
+              <a href="#cart">Orders</a>
+              <a href="#">Sign out</a>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-bar">
+      <div class="container nav-inner">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="#shop">Shop</a>
+          <details class="dropdown nav-dropdown">
+            <summary>Categories <span class="caret" aria-hidden="true"></span></summary>
+            <div class="dropdown-menu columns">
+              <a href="#categories">Fresh Vegetables</a>
+              <a href="#categories">Fruits</a>
+              <a href="#categories">Dairy &amp; Eggs</a>
+              <a href="#categories">Bakery</a>
+              <a href="#categories">Meat &amp; Fish</a>
+              <a href="#categories">Beverages</a>
+            </div>
+          </details>
+          <a href="#sale">Sale</a>
+          <a href="#about">About</a>
+        </nav>
+        <nav class="secondary-nav" aria-label="Help navigation">
+          <a href="#footer">Policy</a>
+          <a href="#footer">FAQs</a>
+          <a href="#footer">Help &amp; Support</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <img class="hero-deco deco-tomatoes" src="assets/img/hero-produce-tomatoes-left.jpg" alt="" aria-hidden="true">
+      <img class="hero-deco deco-greens" src="assets/img/hero-produce-greens-bottom.jpg" alt="" aria-hidden="true">
+      <img class="hero-deco deco-cucumber" src="assets/img/hero-produce-cucumber-right.jpg" alt="" aria-hidden="true">
+      <img class="hero-person" src="assets/img/hero-delivery-person.jpg" alt="FreshMart delivery partner carrying a grocery bag and a basket of vegetables">
+
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Everything Fresh, All in One Place</p>
+          <h1 class="hero-logo" id="hero-title">
+            <span class="brand-fresh">Fresh<span class="leaf" aria-hidden="true"></span></span>
+            <span class="brand-mart">mart</span>
+          </h1>
+          <span class="badge">Same-Day Delivery</span>
+          <p class="hero-text">Shop from thousands of farm-fresh fruits, vegetables, dairy, and daily essentials at unbeatable prices.</p>
+          <a class="btn btn-outline" href="#shop">Shop Now <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+
+      <aside class="hero-product" aria-label="Featured product">
+        <img src="assets/img/category-vegetables.jpg" alt="Fresh vegetables basket">
+        <div>
+          <strong>Fresh Vegetables</strong>
+          <p><s>$24.00</s> <b>$18.00</b></p>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ===================== QUICK LINKS ===================== -->
+    <section class="section quick-section" aria-label="Quick links">
+      <div class="container quick-grid">
+        <a class="quick-card" href="#shop">
+          <span class="icon icon-star" aria-hidden="true">★</span>
+          <strong>Peak Quality</strong>
+          <small>See the season's best</small>
+        </a>
+        <a class="quick-card" href="#shop">
+          <span class="icon icon-box" aria-hidden="true">▣</span>
+          <strong>New Products</strong>
+          <small>Discover something new</small>
+        </a>
+        <a class="quick-card" href="#sale">
+          <span class="icon icon-tag" aria-hidden="true">⌁</span>
+          <strong>Flash savings</strong>
+          <small>Last chance! Save big</small>
+        </a>
+        <a class="quick-card" href="#sale">
+          <span class="icon icon-truck" aria-hidden="true">▤</span>
+          <strong>Delivery Pass</strong>
+          <small>Get 60 days free delivery</small>
+        </a>
+        <a class="quick-card" href="#shop">
+          <span class="icon icon-cloche" aria-hidden="true">⌂</span>
+          <strong>Prepared meals</strong>
+          <small>Ready in minutes</small>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===================== CATEGORIES ===================== -->
+    <section class="section" id="categories" aria-labelledby="categories-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Browse by aisle</p>
+            <h2 id="categories-title">Shop Categories</h2>
+          </div>
+          <a class="text-link" href="#shop">Show All <span aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="category-grid">
+          <a class="category-card tint-blue" href="#shop">
+            <img src="assets/img/category-vegetables.jpg" alt="Basket of fresh vegetables">
+            <div class="category-meta"><strong>Fresh Vegetables</strong><small>23 Products</small></div>
+          </a>
+          <a class="category-card tint-blue" href="#shop">
+            <img src="assets/img/category-fruits.jpg" alt="Bowl of fresh fruit">
+            <div class="category-meta"><strong>Fruits</strong><small>18 Products</small></div>
+          </a>
+          <a class="category-card tint-purple" href="#shop">
+            <img src="assets/img/category-dairy-eggs.jpg" alt="Milk and eggs">
+            <div class="category-meta"><strong>Dairy &amp; Eggs</strong><small>08 Products</small></div>
+          </a>
+          <a class="category-card tint-pink" href="#shop">
+            <img src="assets/img/category-bakery.jpg" alt="Freshly baked bread">
+            <div class="category-meta"><strong>Bakery</strong><small>12 Products</small></div>
+          </a>
+          <a class="category-card tint-mint" href="#shop">
+            <img src="assets/img/category-meat-fish.jpg" alt="Fresh fish">
+            <div class="category-meta"><strong>Meat &amp; Fish</strong><small>09 Products</small></div>
+          </a>
+          <a class="category-card tint-cream" href="#shop">
+            <img src="assets/img/category-beverages.jpg" alt="Fresh juices">
+            <div class="category-meta"><strong>Beverages</strong><small>13 Products</small></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FRESH PICKS ===================== -->
+    <section class="section picks-section" id="shop" aria-labelledby="picks-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Hand-picked for you</p>
+            <h2 id="picks-title">Today's Fresh Picks</h2>
+          </div>
+          <a class="text-link" href="#categories">Show All <span aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-image"><img src="assets/img/product-tomatoes.jpg" alt="Organic red tomatoes"></div>
+            <div class="product-body">
+              <h3>Organic Red Tomatoes</h3>
+              <p class="seller">Local Farmers</p>
+              <p class="price">$1.33 <span>/ per kg</span></p>
+              <a class="btn btn-outline btn-card" href="#cart">+ Add to Cart</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image"><img src="assets/img/product-eggs.jpg" alt="Farm eggs in a basket"></div>
+            <div class="product-body">
+              <h3>Farm Eggs</h3>
+              <p class="seller">Local Farmers</p>
+              <p class="price">$4.20 <span>/ dozen</span></p>
+              <div class="stepper" aria-label="Quantity: 1">
+                <span>−</span><b>1</b><span>+</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image"><img src="assets/img/product-bananas.jpg" alt="Fresh bananas"></div>
+            <div class="product-body">
+              <h3>Fresh Bananas</h3>
+              <p class="seller">Local Farmers</p>
+              <p class="price">$0.99 <span>/ per kg</span></p>
+              <a class="btn btn-outline btn-card" href="#cart">+ Add to Cart</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image"><img src="assets/img/product-milk.jpg" alt="Fresh whole milk"></div>
+            <div class="product-body">
+              <h3>Fresh Whole Milk</h3>
+              <p class="seller">Local Farmers</p>
+              <p class="price">$2.45 <span>/ 1 L</span></p>
+              <a class="btn btn-outline btn-card" href="#cart">+ Add to Cart</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image"><img src="assets/img/product-rice.jpg" alt="Premium basmati rice grains"></div>
+            <div class="product-body">
+              <h3>Premium Basmati Rice</h3>
+              <p class="seller">Local Farmers</p>
+              <p class="price">$3.80 <span>/ per kg</span></p>
+              <a class="btn btn-outline btn-card" href="#cart">+ Add to Cart</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image"><img src="assets/img/product-avocado.jpg" alt="Fresh avocado"></div>
+            <div class="product-body">
+              <h3>Ripe Avocado</h3>
+              <p class="seller">Local Farmers</p>
+              <p class="price">$2.10 <span>/ each</span></p>
+              <a class="btn btn-outline btn-card" href="#cart">+ Add to Cart</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== BRAND VALUES ===================== -->
+    <section class="section local-section" id="about" aria-labelledby="local-title">
+      <div class="container local-inner">
+        <div class="local-copy">
+          <p class="kicker">Our promise</p>
+          <h2 id="local-title">Local.<br>Fresh.<br><em>Daily.</em></h2>
+          <p class="lead">Discover quality groceries that make everyday meals a little more special.</p>
+          <p>FreshMart is a modern grocery e-commerce experience designed to bring freshness, convenience, and simplicity into everyday shopping. From discovering fresh produce to exploring daily essentials, the platform brings a wide range of grocery categories together in one intuitive digital environment.</p>
+          <a class="btn btn-solid" href="#shop">Explore the shop <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+        <div class="local-collage">
+          <img class="collage-main" src="assets/img/market-produce.jpg" alt="Fresh produce at a local market">
+          <img class="collage-small collage-a" src="assets/img/value-carrots.jpg" alt="Fresh carrots">
+          <img class="collage-small collage-b" src="assets/img/value-tote-bag.jpg" alt="Grocery tote bag">
+          <span class="collage-badge">BUY FRESH<br><b>Fresh mart</b></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FEATURE ===================== -->
+    <section class="section feature-section" aria-labelledby="feature-title">
+      <div class="container feature-inner">
+        <div class="feature-visual">
+          <img class="feature-shopper" src="assets/img/lifestyle-shopper-woman.jpg" alt="Shopper carrying fresh groceries">
+          <img class="feature-float feature-float-a" src="assets/img/product-avocado.jpg" alt="Avocado">
+          <img class="feature-float feature-float-b" src="assets/img/product-milk.jpg" alt="Milk">
+          <div class="order-card">
+            <span>Order tracking</span>
+            <ul>
+              <li>+ Avocado ×2 <b>✓</b></li>
+              <li>+ Fresh milk <b>✓</b></li>
+            </ul>
+            <small>Out for delivery — 10 min away</small>
+          </div>
+        </div>
+        <div class="feature-copy">
+          <p class="kicker">Simple from start to finish</p>
+          <h2 id="feature-title">Shop.<br>Order.<br><em>Track.</em></h2>
+          <p class="lead">A fresher way to shop everyday essentials.</p>
+          <p>Add your favourites, place an order in seconds, and follow your delivery right to your door. Fresh groceries, no guesswork.</p>
+          <a class="btn btn-outline" href="#shop">Start shopping <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SALE / NEWSLETTER ===================== -->
+    <section class="cta-section" id="sale" aria-labelledby="cta-title">
+      <div class="container cta-inner">
+        <div>
+          <p class="kicker kicker-light">Fresh deals, every week</p>
+          <h2 id="cta-title">A Fresher Way to Shop<br>Everyday Essentials.</h2>
+        </div>
+        <form class="newsletter">
+          <label for="email">Get fresh picks in your inbox</label>
+          <div class="newsletter-row">
+            <input id="email" type="email" placeholder="Your email address" required>
+            <button class="btn btn-orange" type="submit">Subscribe <span aria-hidden="true">→</span></button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer" id="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#home" aria-label="FreshMart home">
+          <span class="brand-fresh">Fresh<span class="leaf" aria-hidden="true"></span></span><span class="brand-mart">mart</span>
+        </a>
+        <p>Everything fresh, all in one place. Farm-to-door groceries with same-day delivery.</p>
+        <div class="social" aria-label="Social media">
+          <a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="Facebook">fb</a><a href="#" aria-label="X">x</a><a href="#" aria-label="Pinterest">p</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Shop</h3>
+        <a href="#categories">Fresh Vegetables</a><a href="#categories">Fruits</a><a href="#categories">Dairy &amp; Eggs</a><a href="#categories">Bakery</a>
+      </div>
+      <div class="footer-col">
+        <h3>Company</h3>
+        <a href="#about">About us</a><a href="#sale">Latest offers</a><a href="#feature-title">How it works</a><a href="#footer">Careers</a>
+      </div>
+      <div class="footer-col">
+        <h3>Support</h3>
+        <a href="#footer">Policy</a><a href="#footer">FAQs</a><a href="#footer">Help &amp; Support</a><a href="#footer">Contact</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 FreshMart. All rights reserved.</span>
+      <span>Made with care for fresh food.</span>
+    </div>
+  </footer>
+</body>
+</html>
